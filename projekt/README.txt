@@ -3,7 +3,7 @@ Takto ako to je mi prave pride ze sme dali dokopy dve veci co sa maju rozlicne p
 
 Simple schema toho zapojenia, ktore je urobene v top leveli akurat niektore outputy su prazdne:
 
-![simple shematic](images/schema.jpg)
+![Simple Shematic](images/schema.jpg)
 
 
 (problem s verziami vivada)
