@@ -1,0 +1,807 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:14:34 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 9808
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Apr 08 21:04:39 CEST 2024
+Time zone: 	Central European Standard Time (Europe/Prague)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Local screen bounds: x = 0, y = 0, width = 1600, height = 860
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	C:/Xilinx/Vivado/2023.2/tps/win64/jre17.0.7_7
+Java executable: 	C:/Xilinx/Vivado/2023.2/tps/win64/jre17.0.7_7/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	denis
+User home directory: C:/Users/denis
+User working directory: C:/Users/denis/Desktop/DE1/projekt
+User country: 	CZ
+User language: 	cs
+User locale: 	cs_CZ
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2023.2
+RDI_DATADIR: C:/Xilinx/Vivado/2023.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2023.2/bin
+
+Vivado preferences file: C:/Users/denis/AppData/Roaming/Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: C:/Users/denis/AppData/Roaming/Xilinx/Vivado/2023.2/
+Vivado layouts directory: C:/Users/denis/AppData/Roaming/Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/denis/Desktop/DE1/projekt/vivado.log
+Vivado journal file: 	C:/Users/denis/Desktop/DE1/projekt/vivado.jou
+Engine tmp dir: 	C:/Users/denis/Desktop/DE1/projekt/.Xil/Vivado-9808-DESKTOP-5KOJ2NH
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/Xilinx/Vivado/2023.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent9072 "C:\Users\denis\Desktop\DE1\projekt\PWM_Based_Tone_Generator.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2023.2/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2023.2/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2023.2
+RDI_INSTALLVERSION: 2023.2
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2023.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2023.2/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: C:/Xilinx/Vivado/2023.2/tps/win64/jre17.0.7_7
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: C:/Xilinx/Vivado/2023.2/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2023.2\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2023.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PROG: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: C:\Users\denis\Desktop\DE1\projekt:DESKTOP-5KOJ2NH-08.04.2024_21-03-56,07
+RDI_SHARED_DATA: C:/Xilinx/SharedData/2023.2/data
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2023.2/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2023.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2023.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2023.2
+_RDI_BINROOT: C:\Xilinx\Vivado\2023.2\bin
+_RDI_CWD: C:\Users\denis\Desktop\DE1\projekt
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 706 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1020 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\denis\Desktop\DE1\projekt\PWM_Based_Tone_Generator.xpr. Version: Vivado v2023.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.xpr 
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 67 MB. Current time: 4/8/24, 9:04:40 PM CEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 122 MB (+125436kb) [00:00:36]
+// [Engine Memory]: 1,015 MB (+913332kb) [00:00:36]
+// WARNING: HEventQueue.dispatchEvent() is taking  4256 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,045 MB. GUI used memory: 71 MB. Current time: 4/8/24, 9:04:58 PM CEST
+// Tcl Message: open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:21 . Memory (MB): peak = 1397.270 ; gain = 154.082 
+// Project name: PWM_Based_Tone_Generator; location: C:/Users/denis/Desktop/DE1/projekt; part: xck24-ubva530-2LV-c
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// [GUI Memory]: 139 MB (+11767kb) [00:00:42]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (PWM_Based_Tone_Generator.vhd) elapsed time: 0.3s
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_Based_Tone_Generator(Behavioral) (PWM_Based_Tone_Generator.vhd)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_Based_Tone_Generator(Behavioral) (PWM_Based_Tone_Generator.vhd)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// [Engine Memory]: 1,067 MB (+661kb) [00:01:21]
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+// Elapsed time: 13 seconds
+setFileChooser("C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/simple_counter.vhd");
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c (dialog0)
+// Tcl Message: add_files -norecurse C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/simple_counter.vhd 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,091 MB. GUI used memory: 73 MB. Current time: 4/8/24, 9:06:05 PM CEST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_Based_Tone_Generator(Behavioral) (PWM_Based_Tone_Generator.vhd)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "4"); // g (PAResourceEtoH.FileSetPanel_MESSAGES)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(behavioral) (debounce.vhd)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_enable(Behavioral) (clock_enable.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_enable(Behavioral) (clock_enable.vhd)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(behavioral) (debounce.vhd)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(behavioral) (debounce.vhd)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/simple_counter.vhd");
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 6 seconds
+// [GUI Memory]: 149 MB (+2851kb) [00:02:24]
+dismissDialog("Add Sources"); // c (dialog2)
+// Tcl Message: add_files -norecurse C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/simple_counter.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_Based_Tone_Generator(Behavioral) (PWM_Based_Tone_Generator.vhd)]", 2, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_Based_Tone_Generator(Behavioral) (PWM_Based_Tone_Generator.vhd)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_Based_Tone_Generator(Behavioral) (PWM_Based_Tone_Generator.vhd), tone : simple_counter(Behavioral) (simple_counter.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_Based_Tone_Generator(Behavioral) (PWM_Based_Tone_Generator.vhd), tone : simple_counter(Behavioral) (simple_counter.vhd)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_Based_Tone_Generator(Behavioral) (PWM_Based_Tone_Generator.vhd), tone : simple_counter(Behavioral) (simple_counter.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 193, 292); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 440, 149); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 160 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 166, 312); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 279 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 80, 314); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 75, 316); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 114, 320); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 24 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 143, 300); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simple_counter.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1192 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1190 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1189 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1200 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1202 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1200 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1212 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1290 ms. Increasing delay to 3870 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1215 ms to process. Increasing delay to 2000 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 167, 114); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 11m:15s
+// WARNING: HEventQueue.dispatchEvent() is taking  1516 ms.
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 281, 294); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 242, 260); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 11m:21s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 11m:23s
+// WARNING: HEventQueue.dispatchEvent() is taking  1302 ms.
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 188, 314); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed Time for: 'L.f': 11m:29s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1026ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1030 ms.
+// Elapsed Time for: 'L.f': 11m:32s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simple_counter.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 11m:33s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 11m:36s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'L.f': 11m:42s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 13m:00s
+// WARNING: HEventQueue.dispatchEvent() is taking  2231 ms.
+// Elapsed Time for: 'L.f': 13m:09s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 15m:33s
+// Elapsed Time for: 'L.f': 15m:36s
+// Elapsed time: 274 seconds
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'v'); // ad (PWM_Based_Tone_Generator.vhd)
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'v'); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 87 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 168, 297); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 283, 298); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 261, 297); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 17m:54s
+// Elapsed Time for: 'L.f': 17m:57s
+// Elapsed time: 34 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 205, 296); // ad (PWM_Based_Tone_Generator.vhd)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aa
+selectTab((HResource) null, (HResource) null, "Log", 2); // aa
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. ]", 2, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. ]", 2); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. ]", 2, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. , [Common 17-180] Spawn failed: No error. ]", 3, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. , [Common 17-180] Spawn failed: No error. ]", 9, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. ]", 2); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 178, 282); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 216, 280); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 10 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 261, 300); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 16 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 98, 213); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 30 seconds
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'v'); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 220, 274); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 290, 313); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 251, 290); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 255, 272); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed Time for: 'L.f': 19m:54s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 19m:57s
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_enable(Behavioral) (clock_enable.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_enable.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_enable.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("clock_enable.vhd", 246, 98); // ad (clock_enable.vhd)
+typeControlKey((HResource) null, "clock_enable.vhd", 'c'); // ad (clock_enable.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 209, 185); // ad (PWM_Based_Tone_Generator.vhd)
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'v'); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 20m:27s
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 260, 236); // ad (PWM_Based_Tone_Generator.vhd)
+// WARNING: HEventQueue.dispatchEvent() is taking  1926 ms.
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // g (PAResourceEtoH.FileSetPanel_MESSAGES)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// Elapsed Time for: 'L.f': 20m:30s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // g (PAResourceEtoH.FileSetPanel_MESSAGES)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 343, 284); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 28 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 208, 293); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 21m:12s
+// Elapsed Time for: 'L.f': 21m:15s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 22m:21s
+// Elapsed Time for: 'L.f': 22m:24s
+// Elapsed time: 81 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 190, 237); // ad (PWM_Based_Tone_Generator.vhd)
+selectButton(RDIResource.HFilterToolBar_SHOW_ALL, "Show All"); // a (RDIResource.HFilterToolBar_SHOW_ALL, RDIResource.HFilterToolBar_HIDE_ALL)
+selectButton(RDIResource.HFilterToolBar_HIDE_ALL, "Hide All"); // a (RDIResource.HFilterToolBar_HIDE_ALL)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 172, 247); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 25 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 76, 149); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 165, 141); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 23m:09s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 251, 133); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed Time for: 'L.f': 23m:12s
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 249, 147); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 27 seconds
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'v'); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 19 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 243, 231); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 210, 208); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 191, 237); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed Time for: 'L.f': 24m:06s
+// Elapsed Time for: 'L.f': 24m:09s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 209, 266); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed Time for: 'L.f': 24m:30s
+// WARNING: HEventQueue.dispatchEvent() is taking  1925 ms.
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 24m:33s
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 262, 177); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 297, 141); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 28 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 329, 111); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 320, 126); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 11 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 277, 194); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 47 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 203, 196); // ad (PWM_Based_Tone_Generator.vhd)
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'c'); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 502, 260); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 502, 243); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 485, 212); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 480, 226); // ad (PWM_Based_Tone_Generator.vhd)
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'v'); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 254, 232); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 615, 227); // ad (PWM_Based_Tone_Generator.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 28m:13s
+// WARNING: HEventQueue.dispatchEvent() is taking  1008 ms.
+// Elapsed Time for: 'L.f': 28m:15s
+// Elapsed time: 118 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 267, 214); // ad (PWM_Based_Tone_Generator.vhd)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13, true); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Elaborate Design"); // u (dialog4)
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xck24-ubva530-2LV-c Top: clock_enable 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,302 MB. GUI used memory: 77 MB. Current time: 4/8/24, 9:33:27 PM CEST
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,302 MB. GUI used memory: 77 MB. Current time: 4/8/24, 9:33:49 PM CEST
+// TclEventType: MSGMGR_REFRESH_MSG
+// [Engine Memory]: 1,302 MB (+190984kb) [00:29:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,613 MB. GUI used memory: 77 MB. Current time: 4/8/24, 9:34:07 PM CEST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,623 MB. GUI used memory: 76 MB. Current time: 4/8/24, 9:34:10 PM CEST
+// Xgd.load filename: C:/Xilinx/Vivado/2023.2/data/parts/xilinx/zynquplus/devint/zynquplus/xck24/xck24.xgd; ZipEntry: xck24_floorplan.xgd elapsed time: 0.6s
+// [Engine Memory]: 1,631 MB (+276335kb) [00:29:52]
+// [Engine Memory]: 1,740 MB (+28149kb) [00:29:54]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2023.2/data/parts/xilinx/zynquplus/devint/zynquplus/xck24/xck24.xgd; ZipEntry: xck24_detail.xgd elapsed time: 2.2s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 2.7s
+// [GUI Memory]: 188 MB (+33287kb) [00:29:56]
+// [Engine Memory]: 1,902 MB (+78912kb) [00:29:58]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 4.3s
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  4962 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xck24-ubva530-2LV-c 
+// Tcl Message: INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes. INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes INFO: [Synth 8-7075] Helper process launched with PID 8196 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2747.664 ; gain = 377.617 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'clock_enable' [C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/clock_enable.vhd:19] INFO: [Synth 8-256] done synthesizing module 'clock_enable' (0#1) [C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/clock_enable.vhd:19] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2859.938 ; gain = 489.891 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2859.938 ; gain = 489.891 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2859.938 ; gain = 489.891 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2859.938 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2861.270 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// [GUI Memory]: 212 MB (+14926kb) [00:30:00]
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:45 ; elapsed = 00:00:31 . Memory (MB): peak = 3152.316 ; gain = 782.270 
+// Tcl Message: 8 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 3152.316 ; gain = 1711.586 
+// Elapsed Time for: 'o.a': 01m:02s
+// 'dB' command handler elapsed time: 62 seconds
+// Elapsed time: 61 seconds
+dismissDialog("Open Elaborated Design"); // bq (Open Elaborated Design Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  1269 ms.
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells sig_count_reg[4]]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// PAPropertyPanels.initPanels (sig_count_reg[4] (RTL_REG_SYNC__BREG_1)) elapsed time: 0.3s
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells sig_count_reg[4]]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 31 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells sig_count_reg[4]]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells sig_count_reg[4]]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Confirm Close"); // u (dialog5)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 142 MB. Current time: 4/8/24, 9:35:19 PM CEST
+// Engine heap size: 1,946 MB. GUI used memory: 143 MB. Current time: 4/8/24, 9:35:19 PM CEST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bq (Close Progress)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 435, 216); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 17 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 137, 317); // ad (PWM_Based_Tone_Generator.vhd)
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'c'); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 129 seconds
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'c'); // ad (PWM_Based_Tone_Generator.vhd)
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'c'); // ad (PWM_Based_Tone_Generator.vhd)
+// Elapsed time: 21 seconds
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 181, 192); // ad (PWM_Based_Tone_Generator.vhd)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES)
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tb_PWM_Based_Tone"); // Q (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Tcl Command: 'file mkdir C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sim_1/new'
+dismissDialog("Create Source File"); // m (dialog7)
+// Tcl Message: file mkdir C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sim_1/new 
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // c (dialog6)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sim_1/new/tb_PWM_Based_Tone.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sim_1/new/tb_PWM_Based_Tone.vhd 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p (dialog8)
+// Elapsed Time for: 'L.f': 33m:55s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 33m:58s
+// Tcl Message: update_compile_order -fileset sim_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 34m:01s
+// Elapsed Time for: 'L.f': 34m:04s
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_PWM_Based_Tone(Behavioral) (tb_PWM_Based_Tone.vhd)]", 12, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_PWM_Based_Tone(Behavioral) (tb_PWM_Based_Tone.vhd)]", 12, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 135, 305); // ad (tb_PWM_Based_Tone.vhd)
+typeControlKey((HResource) null, "tb_PWM_Based_Tone.vhd", 'v'); // ad (tb_PWM_Based_Tone.vhd)
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 466, 137); // ad (tb_PWM_Based_Tone.vhd)
+// Elapsed time: 66 seconds
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 255, 179); // ad (tb_PWM_Based_Tone.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 38m:28s
+// Elapsed Time for: 'L.f': 38m:31s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 174 seconds
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 128, 196); // ad (tb_PWM_Based_Tone.vhd)
+// Elapsed Time for: 'L.f': 38m:34s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 38m:37s
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed Time for: 'L.f': 38m:40s
+// Elapsed Time for: 'L.f': 38m:43s
+// Elapsed time: 22 seconds
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 288, 164); // ad (tb_PWM_Based_Tone.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 38m:58s
+// Elapsed Time for: 'L.f': 39m:01s
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_enable.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_PWM_Based_Tone.vhd", 5); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_enable.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("clock_enable.vhd", 206, 110); // ad (clock_enable.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_PWM_Based_Tone.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 36 seconds
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 357, 255); // ad (tb_PWM_Based_Tone.vhd)
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 300, 237); // ad (tb_PWM_Based_Tone.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 40m:46s
+// Elapsed Time for: 'L.f': 40m:49s
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simple_counter.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 126, 145); // ad (PWM_Based_Tone_Generator.vhd)
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'c'); // ad (PWM_Based_Tone_Generator.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_PWM_Based_Tone.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+typeControlKey((HResource) null, "tb_PWM_Based_Tone.vhd", 'v'); // ad (tb_PWM_Based_Tone.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 41m:22s
+// Elapsed Time for: 'L.f': 41m:25s
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 187, 131); // ad (tb_PWM_Based_Tone.vhd)
+typeControlKey((HResource) null, "tb_PWM_Based_Tone.vhd", 'c'); // ad (tb_PWM_Based_Tone.vhd)
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 112, 160); // ad (tb_PWM_Based_Tone.vhd)
+typeControlKey((HResource) null, "tb_PWM_Based_Tone.vhd", 'v'); // ad (tb_PWM_Based_Tone.vhd)
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 120, 165); // ad (tb_PWM_Based_Tone.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 41m:34s
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 279, 157); // ad (tb_PWM_Based_Tone.vhd)
+// Elapsed Time for: 'L.f': 41m:37s
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 197, 144); // ad (tb_PWM_Based_Tone.vhd)
+typeControlKey((HResource) null, "tb_PWM_Based_Tone.vhd", 'c'); // ad (tb_PWM_Based_Tone.vhd)
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 91, 179); // ad (tb_PWM_Based_Tone.vhd)
+typeControlKey((HResource) null, "tb_PWM_Based_Tone.vhd", 'v'); // ad (tb_PWM_Based_Tone.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Based_Tone_Generator.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'L.f': 41m:43s
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 120, 183); // ad (PWM_Based_Tone_Generator.vhd)
+typeControlKey((HResource) null, "PWM_Based_Tone_Generator.vhd", 'c'); // ad (PWM_Based_Tone_Generator.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_PWM_Based_Tone.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'L.f': 41m:46s
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 132, 180); // ad (tb_PWM_Based_Tone.vhd)
+typeControlKey((HResource) null, "tb_PWM_Based_Tone.vhd", 'v'); // ad (tb_PWM_Based_Tone.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_PWM_Based_Tone.vhd", 213, 178); // ad (tb_PWM_Based_Tone.vhd)
+// Elapsed Time for: 'L.f': 41m:55s
+// Elapsed Time for: 'L.f': 41m:58s
+// Elapsed time: 25 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ac (PAResourceItoN.MainToolbarMgr_RUN)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ao (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, run_synthesis_menu)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog9)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr  8 21:47:26 2024] Launched synth_1... Run output will be captured here: C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.runs/synth_1/runme.log 
+// 'i' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // al (PAResourceItoN.MainMenuMgr_SETTINGS, Settings)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // ag (PAResourceCommand.PACommandNames_SIMULATION_RUN)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ao (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, run_synthesis_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog10)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Apr  8 21:47:42 2024] Launched synth_1... Run output will be captured here: C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.runs/synth_1/runme.log 
+// 'i' command handler elapsed time: 9 seconds
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 88 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN)
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog12)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Mon Apr  8 21:49:17 2024] Launched impl_1... Run output will be captured here: C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 47 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // Q.a (dialog13)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 5 ; 6 ; 0.0 ; 0 ; 0 ; Mon Apr 08 21:47:56 CEST 2024 ; 00:01:07 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xck24-ubva530-2LV-c ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ao (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.5s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 5 ; 6 ; 0.0 ; 0 ; 0 ; Mon Apr 08 21:47:56 CEST 2024 ; 00:01:07 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xck24-ubva530-2LV-c ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ao (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE) - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 5 ; 6 ; 0.0 ; 0 ; 0 ; Mon Apr 08 21:47:56 CEST 2024 ; 00:01:07 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xck24-ubva530-2LV-c ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ao (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE) - Popup Trigger - Node
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xck24-ubva530-2LV-c 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 87 MB. Current time: 4/8/24, 9:50:24 PM CEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1183 ms. Increasing delay to 3000 ms.
+// Xgd.load filename: C:/Xilinx/Vivado/2023.2/data/parts/xilinx/zynquplus/devint/zynquplus/xck24/xck24.xgd; ZipEntry: xck24_detail.xgd elapsed time: 1.3s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.7s
+// TclEventType: DESIGN_NEW
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.4s
+// WARNING: HEventQueue.dispatchEvent() is taking  2735 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3175.738 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2023.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3175.738 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 2 instances  
+// CommandFailedException: ERROR: [Common 17-577] Internal error: Cannot run timing on a non-timing device 
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2023.2 (64-bit)
+# SW Build: 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build: 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Current time: Mon Apr 08 21:50:29 CEST 2024
+# Process ID (PID): 9808
+# OS: Windows 10
+# User: denis
+# Project: PWM_Based_Tone_Generator
+# Part: xck24-ubva530-2LV-c
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.cmd.CommandFailedException: ERROR: [Common 17-577] Internal error: Cannot run timing on a non-timing device
+ (See C:/Users/denis/Desktop/DE1/projekt/vivado_pid9808.debug)
+*/
+// Device view-level: 0,0
+// HOptionPane Error: 'ERROR: [Common 17-577] Internal error: Cannot run timing on a non-timing device (Vivado v2023.2 (64-bit))'
+// Tcl Message: open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 3506.012 ; gain = 330.273 
+// 'dB' command handler elapsed time: 8 seconds
+// [GUI Memory]: 230 MB (+8139kb) [00:46:12]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 5s
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // E (dialog14)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1045498, 867645); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (1171, 372, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device select: 'Tile - CLEL_R_X11Y83'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 480, 186, 896, 383); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice)
+// PAPropertyPanels.initPanels (Tile: CLEL_R_X11Y83) elapsed time: 0.4s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 686312, 1264149); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (1094, 457, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device select: 'I/O Bank - I/O Bank 505'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 403, 271, 896, 383); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice)
+// PAPropertyPanels.initPanels (I/O Bank 505) elapsed time: 0.4s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1493315, 881639); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (1267, 375, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device select: 'Tile - CLEM_R_X32Y82'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 576, 189, 896, 383); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 161 MB. Current time: 4/8/24, 9:50:35 PM CEST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1064157, 1068229); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (1175, 415, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 484, 229, 896, 383); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice)
+// Device view-level: 0,3
+// Device view-level: 0,6
+// Device view-level: 0,9
+// Device view-level: 1,2
+// Device view-level: 1,5
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 161 MB. Current time: 4/8/24, 9:50:43 PM CEST
+// Device view-level: 2,0
+// Device view-level: 2,6
+// Device view-level: 2,9
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 161 MB. Current time: 4/8/24, 9:50:45 PM CEST
+// Device view-level: 2,6
+// Device view-level: 1,5
+// Device view-level: 1,2
+// Device view-level: 0,9
+// Device view-level: 0,6
+// Device view-level: 0,3
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 174 MB. Current time: 4/8/24, 9:50:48 PM CEST
+// Device view-level: 0,0
+// Elapsed time: 20 seconds
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 192, 173); // ad (PWM_Based_Tone_Generator.vhd)
+selectCodeEditor("PWM_Based_Tone_Generator.vhd", 406, 259); // ad (PWM_Based_Tone_Generator.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_PWM_Based_Tone.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeFrame(PAResourceOtoP.PAViews_NETLIST, "Netlist"); // R (PAResourceOtoP.PAViews_NETLIST, Netlist)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_PWM_Based_Tone_Generator(tb) (tb_PWM_Based_Tone.vhd)]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_PWM_Based_Tone_Generator(tb) (tb_PWM_Based_Tone.vhd)]", 8, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ac (PAResourceItoN.MainToolbarMgr_RUN)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ac (PAResourceItoN.MainToolbarMgr_RUN)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // al (PAResourceItoN.MainMenuMgr_SETTINGS, Settings)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Synthesized Design"); // ao (PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, netlist_planning_task_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 18, true); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Synthesis", "Synthesized Design", "DesignTask.NETLIST_PLANNING");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Confirm Close"); // u (dialog15)
+// TclEventType: DESIGN_CLOSE
+// RouteApi: Init Delay Mediator Swing Worker Join Forever
+// Tcl Message: close_design 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (RDIResource.ProgressDialog_CANCEL)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 157 MB. Current time: 4/8/24, 9:52:16 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 158 MB. Current time: 4/8/24, 9:52:46 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 158 MB. Current time: 4/8/24, 9:53:17 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 157 MB. Current time: 4/8/24, 9:54:16 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 157 MB. Current time: 4/8/24, 9:54:46 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,946 MB. GUI used memory: 157 MB. Current time: 4/8/24, 9:55:16 PM CEST
