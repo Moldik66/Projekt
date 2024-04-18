@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../PWM_Based_Tone_Generator.srcs/sources_1/new/PWM_Based_Tone_Generator.vhd" \
-"../../../../PWM_Based_Tone_Generator.srcs/sim_1/new/tb_PWM_Based_Tone.vhd" \
-
-# Do not sort compile order
-nosort
