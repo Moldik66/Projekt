@@ -49,22 +49,6 @@ architecture Behavioral of top_level is
         Port ( 
                 clk  : in STD_LOGIC;
                 sw : in STD_LOGIC_VECTOR(15 downto 0); 
-                --sw_1 : in STD_LOGIC;
-                --sw_2 : in STD_LOGIC;
-                --sw_3 : in STD_LOGIC;
-                --sw_4 : in STD_LOGIC;
-                --sw_5 : in STD_LOGIC;
-                --sw_6 : in STD_LOGIC;
-                --sw_7 : in STD_LOGIC;
-                --sw_8 : in STD_LOGIC;
-                --sw_9 : in STD_LOGIC;
-                --sw_10 : in STD_LOGIC;
-                --sw_11 : in STD_LOGIC;
-                --sw_12 : in STD_LOGIC;
-                --sw_13 : in STD_LOGIC;
-                --sw_14 : in STD_LOGIC;
-                --sw_15 : in STD_LOGIC;
-                --sw_16 : in STD_LOGIC;
                 tone_out : out STD_LOGIC;
                 countin : in STD_LOGIC_VECTOR (17 downto 0);
                 countrst : out STD_LOGIC
@@ -88,8 +72,6 @@ end component;
     end component;
     
 
-signal sig_en : std_logic;
-signal sig_event : std_logic;
 signal sig_counted : std_logic_vector (17 downto 0);
 signal sig_reset : std_logic;
 
@@ -106,9 +88,6 @@ begin
                     
        
                 );
-
-
-
 
                 
     SIMP_C : simple_counter

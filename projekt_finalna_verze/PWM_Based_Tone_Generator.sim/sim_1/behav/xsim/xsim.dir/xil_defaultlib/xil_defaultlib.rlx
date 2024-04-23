@@ -1,6 +1,7 @@
 0.7
 2020.2
-Oct 13 2023
-20:47:58
-C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sim_1/new/tb_PWM_Based_Tone.vhd,1712660800,vhdl,,,,cfg_tb_pwm_based_tone_generator;tb_pwm_based_tone_generator,,,,,,,,
-C:/Users/denis/Desktop/DE1/projekt/PWM_Based_Tone_Generator.srcs/sources_1/new/PWM_Based_Tone_Generator.vhd,1712660908,vhdl,,,,pwm_based_tone_generator,,,,,,,,
+Nov 18 2020
+09:47:47
+V:/MOLAK/Projekt/projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/simple_counter.vhd,1712841019,vhdl,,,,simple_counter,,,,,,,,
+V:/MOLAK/Projekt/projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/new/PWM_Based_Tone_Generator.vhd,1713856580,vhdl,,,,pwm_based_tone_generator,,,,,,,,
+V:/MOLAK/Projekt/projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/new/top_level.vhd,1713856619,vhdl,,,,top_level,,,,,,,,

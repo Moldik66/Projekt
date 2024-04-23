@@ -34,23 +34,8 @@ use IEEE.std_logic_unsigned.all;
 --use UNISIM.VComponents.all;
 
 entity PWM_Based_Tone_Generator is
-    Port ( clk : in STD_LOGIC; --clk vlastne vubec nepotrebujeme v tejto komponente, proto hazi error 17-577 (mne to nehlasilo error)
-           sw : in STD_LOGIC_VECTOR(15 downto 0); --switche by mozno bolo lepsie urobit cez vektor nech to je viac upratane a zaberalo to len sw vector 15 to 0
-           --sw_2 : in STD_LOGIC;
-           --sw_3 : in STD_LOGIC; -- unused, muzeme zkusit nejakej dalsi test tone, idealne white noise
-           --sw_4 : in STD_LOGIC;
-           --sw_5 : in STD_LOGIC; 
-           --sw_6 : in STD_LOGIC;
-           --sw_7 : in STD_LOGIC;
-           --sw_8 : in STD_LOGIC;
-           --sw_9 : in STD_LOGIC;
-           --sw_10 : in STD_LOGIC;
-           --sw_11 : in STD_LOGIC;
-           --sw_12 : in STD_LOGIC;
-           --sw_13 : in STD_LOGIC;
-           --sw_14 : in STD_LOGIC;
-           --sw_15 : in STD_LOGIC;
-           --sw_16 : in STD_LOGIC;
+    Port ( clk : in STD_LOGIC; 
+           sw : in STD_LOGIC_VECTOR(15 downto 0); 
            LED : out std_logic_vector (15 downto 0);
            tone_out : out STD_LOGIC;
            countin : in STD_LOGIC_VECTOR (17 downto 0);
