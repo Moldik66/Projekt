@@ -53,7 +53,10 @@ In the top_level source code we connected these two codes together and assigned 
 
 [Link to source files](projekt_finalna_verze/PWM_Based_Tone_Generator.srcs) 
 
-### Component(s) simulation
+### Components simulation
+
+Behavioral simulation showcasing the state when the first switch is turned on:
+![Testbench](images/simulacia.png)
 
 
 ## Instructions
