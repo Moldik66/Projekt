@@ -55,7 +55,7 @@ In the top_level source code we connected these two codes together and assigned 
 
 ### Components simulation
 
-Behavioral simulation showcasing the state when the first switch is turned on:
+Behavioral simulation showcasing the state of the signals when the first switch is turned on:
 ![Testbench](images/simulacia.png)
 
 
