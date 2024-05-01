@@ -20,6 +20,7 @@ For output we are using the mono audio out jack and pins A11 and D12 which repre
 
 Description of switches and notes assigned to them:
 | **Switch** | **LED** | **Note** | **Frequency** |
+| :---: | :---: | :---: | :---: |
 | SW[0] | LED[0] | A4 | 440 Hz |
 | SW[1] | LED[1] | - | 1 kHz |
 | SW[2] | LED[2] | - | - |
