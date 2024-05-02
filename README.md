@@ -64,7 +64,7 @@ Three states are specified for each tone:
 Each condition is defined by a range of counttin counter values corresponding to a given tone frequency.
 Overall, the code is structured to allow different tone frequencies to be generated based on the input signals. This allows the PWM signal to be modulated according to the desired musical tones, which is useful, for example, in the design of electronic musical instruments or sound effects.
 
-projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/new/PWM_Based_Tone_Generator.vhd
+[Link to source files]projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/new/PWM_Based_Tone_Generator.vhd
 
 ### Simple Counter
 This code implements a simple counter that increments the value by one for each pulse of the clock signal (clk). In addition, it responds to a reset signal (rst) and an enable signal (en) that controls whether to increment the counter.
@@ -72,7 +72,7 @@ The simple_counter entity defines the inputs and outputs of the module, with the
 The Behavioral architecture includes a process that responds to changes in the clock signal. When the reset signal is active (rst='1'), the counter value is set to zero. If the enable signal is active (en='1'), the counter value is incremented by one for each pulse of the clock signal.
 The resulting counter value is passed to the count output signal. This counter is useful for simple pulse counting or time tracking in digital systems where event sequences need to be monitored or generated.
 
-projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/new/simple_counter2.vhd
+[Link to source files]projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/new/simple_counter2.vhd
 
 ### Clock Enable
 This code implements a module to generate a pulse using the clock signal (clk). The module allows to set the pulse period using the generic parameter PERIOD.
@@ -81,7 +81,7 @@ The p_clk_enable process is implemented in the Behavioral architecture to genera
 In the synchronous part of the process, the rising edge of the clock signal is checked. If the reset is active, the counter is set to zero and the pulse signal is set to zero. If the number of periods is equivalent to the defined period PERIOD - 1, the pulse signal is generated for one clock period and the counter is reset. Otherwise, the counter is incremented and the pulse signal remains zero.
 This module is useful for generating periodic pulses, for example for synchronizing operation in digital systems where a short pulse needs to be generated at regular intervals.
 
-projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/clock_enable.vhd
+[Link to source files]projekt_finalna_verze/PWM_Based_Tone_Generator.srcs/sources_1/imports/new/clock_enable.vhd
 
 
 [Link to source files](projekt_finalna_verze/PWM_Based_Tone_Generator.srcs) 
